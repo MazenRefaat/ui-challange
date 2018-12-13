@@ -1,3 +1,294 @@
-p {
-    color: green;
+//Imports 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+//Variables
+$roboto-font: Roboto;
+
+
+//body
+body {
+    margin: 0;
+}
+
+//Header 
+header {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 10px 15px 10px;
+
+    .header__logo {
+        display: inline-block;
+        width: 120px;
+
+        a {
+            display: block;
+        }
+    }
+
+    .header__tele-info {
+        display: inline-block;
+        float: right;
+
+        p {
+            font-family: $roboto-font, sans-serif;
+            font-size: 14px;
+            color: #ccc;
+            margin: 0;
+
+            a {
+                font-weight: bold;
+                color: #000;
+                padding-left: 10px;
+
+                img {
+                    vertical-align: bottom;
+                    width: 14px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+
+        .header__tele-info {
+
+            .hotline-label,
+            .hotline-number {
+                display: none;
+            }
+
+            img {
+                width: 32px;
+            }
+        }
+    }
+}
+
+// Main 
+main {
+    max-width: 60%;
+    margin: 0 auto;
+
+    .main__msg {
+        padding-top: 50px;
+
+        p {
+            font-family: $roboto-font, sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.5;
+            text-align: center;
+            color: #353535;
+
+            span {
+                font-size: 18px;
+                font-weight: 100;
+                color: #777;
+                display: block;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .main__files {
+        .files__container {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc;
+
+            .estate-info {
+                display: flex;
+                flex-direction: row;
+                padding: 25px;
+
+                .estate-info__img {
+                    width: 150px;
+
+                    img {
+                        max-width: 100%;
+                    }
+
+                    @media (max-width: 480px) {
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .estate-info__details {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 0 15px;
+
+                    >p {
+                        font-family: $roboto-font, sans-serif;
+                        font-size: 12px;
+                        margin: 0;
+
+                        .details__info-label {
+                            display: inline-block;
+                            min-width: 150px;
+                            color: #777;
+
+                            @media (max-width: 480px) {
+                                display: block;
+                            }
+                        }
+
+                        @media (max-width: 480px) {
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    @media (max-width: 480px) {
+                        padding: 15px 0;
+
+                    }
+                }
+
+                .estate-info__download {
+
+                    margin-left: auto;
+
+                    .download-btn {
+                        text-decoration: none;
+                        padding: 7px 15px;
+                        background-color: #FDBB00;
+                        color: #fff;
+                        box-shadow: 0 2px 1px -1px gray;
+                        transition: box-shadow 0.2s linear;
+                    }
+
+                    .download-btn:active {
+                        box-shadow: 0 3px 1px -1px #fff;
+                    }
+
+                    @media (max-width: 480px) {
+                        width: 100%;
+
+                        .download-btn {
+                            display: block;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    flex-direction: column
+                }
+            }
+        }
+
+        .files__check {
+            padding: 25px;
+
+            input {
+                margin-left: 0;
+            }
+
+            span {
+                font-family: $roboto-font, sans-serif;
+                font-size: 12px;
+                color: #777;
+            }
+        }
+
+        .files__download {
+
+            .folder-file {
+                .files-in {
+                    padding: 0 0 0 50px;
+                }
+
+            }
+
+            .file-header {
+                padding: 12px 25px;
+
+                .btn-link {
+                    text-decoration: none;
+                    color: #777 !important;
+                }
+            }
+
+            .file-body {
+                padding: 10px 25px;
+
+                .files-in {
+
+
+                    .file__icon {
+                        display: inline-flex;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background-color: #ccc;
+                        margin: 0 15px 0 50px;
+                        padding: 5px;
+                        justify-content: center;
+                        align-items: center;
+                        vertical-align: middle;
+
+                        img {
+                            max-width: 32px;
+                            margin: 0 auto;
+                        }
+
+                        @media (max-width: 480px) {
+                            display: none;
+                        }
+                    }
+
+                    .file__text {
+                        display: inline-block;
+
+                        .file__type,
+                        .file__name {
+                            display: inline-block;
+
+                            span {
+                                color: #777;
+                            }
+
+                            @media (max-width: 480px) {
+                                display: block;
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    .file__name {
+                        margin-left: 100px;
+
+                        span {
+                            font-size: 12px;
+                            color: #ccc;
+                        }
+
+                        
+                    }
+                }
+            }
+
+            .files__download-btn,
+            .files__show-btn {
+                display: inline-block;
+                width: 40px;
+                margin-left: 10px;
+                padding: 7px;
+                float: right;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        max-width: 100%;
+    }
 }

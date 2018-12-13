@@ -4,15 +4,320 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>UI Challenge - Mazen Refaat</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 
 <body>
-  <p>Hello world!</p>
+  <!-- Start Header -->
+  <header>
+    <section class="header__logo">
+      <a href="https://www.mcmakler.de/">
+        <img src="./img/logo.svg" alt="">
+      </a>
+    </section>
 
+    <section class="header__tele-info">
+      <p>
+        <span class="hotline-label">
+          Kostenlose Service-Hotline
+        </span>
+
+        <a href="tel: 08005008002 ">
+          <img src="https://img.icons8.com/material/24/cccccc/phone.png">
+          <span class="hotline-number">0800 500 80 02</span>
+        </a>
+      </p>
+    </section>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Main -->
+  <main>
+    <section class="main__msg">
+      <p>
+        Vielen Dank für Ihr Interesse
+        <br />
+        an der von uns angebotenen Immobilie.
+        <br />
+
+        <span>
+          Im Folgenden finden Sie alle verfügbaren Unterlagen zum Download.
+        </span>
+      </p>
+    </section>
+
+    <section class="main__files">
+      <section class="files__container">
+        <div class="estate-info">
+          <div class="estate-info__img">
+            <img src="./img/estate.jpg" alt="estate" title="estate">
+          </div>
+
+          <div class="estate-info__details">
+            <p>
+              <span class="details__info-label">
+                OUR ID
+              </span>
+
+              <span class="details__info-value">
+                123456789
+              </span>
+            </p>
+
+            <p>
+              <span class="details__info-label">
+                ADDRESS
+              </span>
+
+              <span class="details__info-value">
+                Finkenweg 81a, 12357 Berlin
+              </span>
+            </p>
+
+            <p>
+              <span class="details__info-label">
+                PRICE
+              </span>
+
+              <span class="details__info-value">
+                2130.000 €
+              </span>
+            </p>
+
+            <p>
+              <span class="details__info-label">
+                TOTAL FLOOR SPACE
+              </span>
+
+              <span class="details__info-value">
+                254 m<sup>2</sup>
+              </span>
+            </p>
+
+            <p>
+              <span class="details__info-label">
+                OUR ID
+              </span>
+
+              <span class="details__info-value">
+                123456789
+              </span>
+            </p>
+          </div>
+
+          <div class="estate-info__download">
+            <a href="" class="download-btn">
+              Download Expose
+            </a>
+          </div>
+        </div>
+
+        <div class="files__check">
+          <input type="checkbox" name="files" value="">
+          <span>
+            0 / 5
+          </span>
+        </div>
+
+        <div class="files__download">
+          <div id="accordion">
+            <div class="accordion" id="folderAccordion">
+              <div class="card file folder-file">
+                <div class="card-header file-header" id="folderHeading">
+                  <h5 class="mb-0">
+                    <input type="checkbox" name="files" value="">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#folderCollapse"
+                      aria-expanded="true" aria-controls="folderCollapse">
+                      Images
+                    </button>
+
+                    <a href="" class="files__download-btn">
+                      <img src="https://img.icons8.com/material/24/777777/download.png">
+                    </a>
+                  </h5>
+                </div>
+
+                <div id="folderCollapse" class="collapse show" aria-labelledby="folderHeading" data-parent="#folderAccordion">
+                  <div class="card-body file-body">
+                    <div class="files-in">
+                      <input type="checkbox" name="files" value="">
+
+                      <div class="file__icon">
+                        <img src="https://img.icons8.com/color/48/777777/jpg.png">
+                      </div>
+
+                      <div class="file__text">
+                        <div class="file__type">
+                          <span>
+                            Image
+                          </span>
+                        </div>
+
+                        <div class="file__name">
+                          <span>
+                            Images
+                          </span>
+                        </div>
+                      </div>
+
+
+                      <div class="files__download-btn">
+                        <a href="">
+                          <img src="https://img.icons8.com/material/24/777777/download.png">
+                        </a>
+                      </div>
+
+                      <div class="files__show-btn">
+                        <a href="">
+                          <img src="https://img.icons8.com/material/24/777777/visible.png">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="file">
+                <div class="file-body">
+                  <div class="files-in">
+
+
+                    <input type="checkbox" name="files" value="">
+
+                    <div class="file__icon">
+                      <img src="https://img.icons8.com/color/48/777777/jpg.png">
+                    </div>
+
+
+                    <div class="file__text">
+                      <div class="file__type">
+                        <span>
+                          Image
+                        </span>
+                      </div>
+
+                      <div class="file__name">
+                        <span>
+                          Images
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="files__download-btn">
+                      <a href="">
+                        <img src="https://img.icons8.com/material/24/777777/download.png">
+                      </a>
+                    </div>
+
+                    <div class="files__show-btn">
+                      <a href="">
+                        <img src="https://img.icons8.com/material/24/777777/visible.png">
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="file">
+                <div class="file-body">
+                  <div class="files-in">
+
+
+                    <input type="checkbox" name="files" value="">
+
+                    <div class="file__icon">
+                      <img src="https://img.icons8.com/color/48/777777/jpg.png">
+                    </div>
+
+
+                    <div class="file__text">
+                      <div class="file__type">
+                        <span>
+                          Image
+                        </span>
+                      </div>
+
+                      <div class="file__name">
+                        <span>
+                          Images
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="files__download-btn">
+                      <a href="">
+                        <img src="https://img.icons8.com/material/24/777777/download.png">
+                      </a>
+                    </div>
+
+                    <div class="files__show-btn">
+                      <a href="">
+                        <img src="https://img.icons8.com/material/24/777777/visible.png">
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="file">
+                <div class="file-body">
+                  <div class="files-in">
+
+
+                    <input type="checkbox" name="files" value="">
+
+                    <div class="file__icon">
+                      <img src="https://img.icons8.com/color/48/777777/jpg.png">
+                    </div>
+
+
+                    <div class="file__text">
+                      <div class="file__type">
+                        <span>
+                          Image
+                        </span>
+                      </div>
+
+                      <div class="file__name">
+                        <span>
+                          Images
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="files__download-btn">
+                      <a href="">
+                        <img src="https://img.icons8.com/material/24/777777/download.png">
+                      </a>
+                    </div>
+
+                    <div class="files__show-btn">
+                      <a href="">
+                        <img src="https://img.icons8.com/material/24/777777/visible.png">
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </section>
+  </main>
+  <!-- End Main-->
+
+  <!-- Start Scripts -->
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/popper.js/dist/popper.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="./index.js"></script>
+  <!-- End Scripts -->
 </body>
 
 </html>
